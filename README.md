@@ -9,7 +9,7 @@ For this demo to run, you should run all commands through a **MS DOS Command Win
 ### Install MySql
 Install your favorite database tool.  For this demo we'll be using MySQL
 
-Download the community edition of MySQL by selecing MySQL Installer for Windows on this [page](https://dev.mysql.com/downloads/). 
+Download the community edition of MySQL by selecting MySQL Installer for Windows on this [page](https://dev.mysql.com/downloads/). 
 
 NOTE: You can install the 5.5M as it will download what you need.
 
@@ -67,11 +67,11 @@ Download [Flyway](https://flywaydb.org/documentation/usage/commandline/#download
 
 In the installation directory there is a flyway.conf file that has all the possible configuration options.  This demo uses a custom configuration file located at `./conf/flyway.conf` to connect to the MySQL database that we just setup.
 
-This file stores your connetion string, user_id and password to connect to the database.  You may need to make changes here.
+This file stores your connection string, user_id and password to connect to the database.  You may need to make changes here.
 
 ## Running Flyway
 
-This demo has a Windows command file `run_flyway.cmd` that does some of the heavy liftying for you.  You will need to review this file and change the `FLYWAY_HOME` to the location of where you unzip Flyway.
+This demo has a Windows command file `run_flyway.cmd` that does some of the heavy lifting for you.  You will need to review this file and change the `FLYWAY_HOME` to the location of where you unzip Flyway.
 
 ```
 set FLYWAY_HOME=I:\desktop-setup\test\DevTools\flyway-9.4.0
@@ -101,7 +101,7 @@ Creating Schema History table `cis264`.`flyway_schema_history` with baseline ...
 Successfully baselined schema with version: 1
 ```
 
-You can now see that a flyway_schema_history table has been created and our basline is in there.  Our database is now at version 1
+You can now see that a flyway_schema_history table has been created and our baseline is in there.  Our database is now at version 1
 
 ![](assets/baseline.png)
 
@@ -185,7 +185,7 @@ Now you can look at MySQL Workbench to see the rows in the table.
 ![](assets/workbench_4.png)
 
 ## Conclusion
-So just by adding some versioning files you can easily create tables and the rows for your database.
+So just by adding some versioned files, you can easily create tables and the rows for your database.
 
 If you really want to start clean each time, you can stack the commands like the following.
 
