@@ -77,6 +77,8 @@ This demo has a Windows command file `run_flyway.cmd` that does some of the heav
 set FLYWAY_HOME=I:\desktop-setup\test\DevTools\flyway-9.4.0
 ```
 
+NOTE: For this demo to run, you should run all commands through a **MS DOS Command Window** or **Windows Powershell**
+
 There are a few commands that we'll run in this demo.
 
 | Command | Description |
