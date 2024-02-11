@@ -2,8 +2,8 @@
 url="jdbc:sqlite:flyway-demo.db"
 user="flyway"
 password="password"
-cleanDisabled="false"
 
 [flyway]
 environment = "default"
 locations=["filesystem:sql"]
+cleanDisabled=false
