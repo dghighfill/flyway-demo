@@ -8,7 +8,7 @@ For this demo to run, you should run all commands through a **MS DOS Command Win
 
 ### Install Flyway
 
-Download [Flyway](https://flywaydb.org/documentation/usage/commandline/#download-and-installation) for your target operating system and unzip the files to a directory of your choosing.
+Download [Flyway](https://flywaydb.org/documentation/usage/commandline/#download-and-installation) for your target operating system and unzip the files to a directory of your choosing.  If that link doesn't work try this [one](https://documentation.red-gate.com/fd/command-line-184127404.html?_ga=2.110596549.1336715038.1693659137-1563105326.1693659137).
 
 #### flyway.conf
 
