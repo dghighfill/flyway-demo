@@ -10,9 +10,9 @@ For this demo to run, you should run all commands through a **MS DOS Command Win
 
 Download [Flyway](https://flywaydb.org/documentation/usage/commandline/#download-and-installation) for your target operating system and unzip the files to a directory of your choosing.  If that link doesn't work try this [one](https://documentation.red-gate.com/fd/command-line-184127404.html?_ga=2.110596549.1336715038.1693659137-1563105326.1693659137).
 
-#### flyway.conf
+#### flyway.toml
 
-In the installation directory there is a flyway.conf file that has all the possible configuration options.  This demo uses a custom configuration file located at `./conf/flyway_sqllite.conf` to connect to the SQLite database.
+In the installation directory there is a `flyway.toml.example` file that has some possible configuration options.  This demo uses a custom configuration file located at `./conf/flyway_sqllite.toml` to connect to the SQLite database.
 
 This file stores your connection string, user_id and password to connect to the database.  You may need to make changes here.
 
@@ -30,12 +30,19 @@ There are a few commands that we'll run in this demo.
 
 | Command | Description |
 | ------- | ----------- |
+| version | Displays the version of flyway installed. |
 | baseline | Baselines an existing database |
 | info | Prints the details and status information about all the migrations. |
 | migrate | Migrates the schema to the latest version. Flyway will create the schema history table automatically if it doesn’t exist. Open a DOS Command Window or Windows Powershell and invoke the following command to test your connection.
 | clean | Drops all objects (tables, views, procedures, triggers, …) in the configured schemas.<br>The schemas are cleaned in the order specified by the schemas and defaultSchema property. |
 
-First run flyway with `baseline` to create the flyway history table
+First run flyway with `version` to make sure that you have it installed correctly.
+
+```
+> run_flyway.cmd version
+```
+
+Next run flyway with `baseline` to create the flyway history table
 
 ```
 > run_flyway.cmd baseline
@@ -49,7 +56,7 @@ Creating Schema History table "main"."flyway_schema_history" with baseline ...
 Successfully baselined schema with version: 1
 ```
 
-Using your favorite SQL Client, You can now see that a flyway_schema_history table has been created and our baseline is in there.  
+Using your favorite SQL Client, You can now see that a `flyway_schema_history` table has been created and our baseline is in there.  
 Our database is now at version 1
 
 ![](assets/baseline.png)
