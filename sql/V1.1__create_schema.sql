@@ -1,2 +1,2 @@
--- SQLLITE doesn't supprot Schemas
+-- SQLLITE doesn't support Schemas
 -- CREATE SCHEMA IF NOT EXISTS `flyway-demo` ;
